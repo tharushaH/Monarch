@@ -24,6 +24,31 @@ export const permissions: GadgetPermissions = {
             update: true,
           },
         },
+        session: {
+          read: true,
+        },
+        task: {
+          read: true,
+          actions: {
+            create: true,
+          },
+        },
+      },
+    },
+    unauthenticated: {
+      storageKey: "unauthenticated",
+      models: {
+        meeting: {
+          read: true,
+          actions: {
+            create: true,
+            delete: true,
+            update: true,
+          },
+        },
+        session: {
+          read: true,
+        },
         task: {
           read: true,
           actions: {
@@ -33,33 +58,25 @@ export const permissions: GadgetPermissions = {
           },
         },
         user: {
-          read: {
-            filter: "accessControl/filters/user/tenant.gelly",
-          },
+          read: true,
           actions: {
-            changePassword: {
-              filter: "accessControl/filters/user/tenant.gelly",
-            },
-            signOut: {
-              filter: "accessControl/filters/user/tenant.gelly",
-            },
-          },
-        },
-      },
-    },
-    unauthenticated: {
-      storageKey: "unauthenticated",
-      models: {
-        user: {
-          actions: {
+            changePassword: true,
+            delete: true,
             resetPassword: true,
             sendResetPassword: true,
             sendVerifyEmail: true,
             signIn: true,
+            signOut: true,
             signUp: true,
+            update: true,
             verifyEmail: true,
           },
         },
+      },
+      actions: {
+        groq_audio: true,
+        groq_txt: true,
+        groq_vision: true,
       },
     },
   },

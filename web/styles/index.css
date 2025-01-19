@@ -1,0 +1,46 @@
+main{
+    text-align: center;
+}
+
+.monarch-logo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.messagebar{
+    width: 30vw;
+    border: 2px solid white;
+    padding: 10px
+}
+
+.paperclip{
+    width: 1vw;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+   
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.chat-input {
+  /* Add any additional styling for ChatInput if needed */
+}

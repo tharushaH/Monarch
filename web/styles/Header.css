@@ -1,0 +1,39 @@
+:root {
+  --navbar-bg-color: rgba(0, 0, 0, 0.6); /* 30% transparent white */
+  --navbar-text-color: #f2f2f2; /* Default text color */
+  --navbar-hover-color: #ec8633; /* Default hover color */
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Add blur effect */
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.website-name {
+  font-size: 2rem; /* Increase font size */
+  font-weight: 50; /* Make it bolder */
+  color: white; /* Make it white */
+  cursor: none;
+}
+
+.navbar .nav-link {
+  color: var(--navbar-text-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.3rem;
+}
+
+.navbar .nav-link:hover {
+  color: var(--navbar-hover-color);
+  transform: scale(1.1);
+}
+
+.navbar .flex {
+  margin-left: auto;
+}
